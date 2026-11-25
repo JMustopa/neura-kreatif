@@ -44,7 +44,7 @@
 </div></section>
 <section class="band"><div class="wrap">
 <div class="sec-head"><div><p class="eyebrow">The team</p><h2 class="h1" style="margin-top:14px">Meet our team.</h2></div></div>
-<div class="team-grid"><div class="team-card"><div class="avatar" style="background:#f6b43c">P</div><h3>Puput</h3><p>Managing Director</p></div><div class="team-card"><div class="avatar" style="background:#d6bde5">J</div><h3>Jody</h3><p>Head of Digital Strategy</p></div><div class="team-card"><div class="avatar" style="background:#ffe09a">A</div><h3>Almira</h3><p>Account Director</p></div><div class="team-card"><div class="avatar" style="background:#efe8d8">K</div><h3>Kukuh</h3><p>Account Executive</p></div><div class="team-card"><div class="avatar" style="background:#f6b43c">B</div><h3>Bram</h3><p>Digital Strategist</p></div><div class="team-card"><div class="avatar" style="background:#d6bde5">J</div><h3>Jidan</h3><p>Graphic Designer</p></div><div class="team-card"><div class="avatar" style="background:#ffe09a">D</div><h3>Della</h3><p>KOL Specialist</p></div><div class="team-card"><div class="avatar" style="background:#efe8d8">G</div><h3>Gita</h3><p>Admin Sosmed</p></div><div class="team-card"><div class="avatar" style="background:#f6b43c">C</div><h3>Cynthia</h3><p>Socmed Specialist & Content Creator</p></div></div>
+<div class="team-grid"><figure class="member" tabindex="0" aria-label="Puput — Managing Director"><div class="member-photo"><span class="member-initial" style="background:#f6b43c">P</span><span class="member-plus">+</span></div><figcaption class="member-tag">Puput — Managing Director</figcaption></figure><figure class="member" tabindex="0" aria-label="Jody — Head of Digital Strategy"><div class="member-photo"><span class="member-initial" style="background:#d6bde5">J</span><span class="member-plus">+</span></div><figcaption class="member-tag">Jody — Head of Digital Strategy</figcaption></figure><figure class="member" tabindex="0" aria-label="Almira — Account Director"><div class="member-photo"><span class="member-initial" style="background:#ffe09a">A</span><span class="member-plus">+</span></div><figcaption class="member-tag">Almira — Account Director</figcaption></figure><figure class="member" tabindex="0" aria-label="Kukuh — Account Executive"><div class="member-photo"><span class="member-initial" style="background:#efe8d8">K</span><span class="member-plus">+</span></div><figcaption class="member-tag">Kukuh — Account Executive</figcaption></figure><figure class="member" tabindex="0" aria-label="Bram — Digital Strategist"><div class="member-photo"><span class="member-initial" style="background:#f6b43c">B</span><span class="member-plus">+</span></div><figcaption class="member-tag">Bram — Digital Strategist</figcaption></figure><figure class="member" tabindex="0" aria-label="Jidan — Graphic Designer"><div class="member-photo"><span class="member-initial" style="background:#d6bde5">J</span><span class="member-plus">+</span></div><figcaption class="member-tag">Jidan — Graphic Designer</figcaption></figure><figure class="member" tabindex="0" aria-label="Della — KOL Specialist"><div class="member-photo"><span class="member-initial" style="background:#ffe09a">D</span><span class="member-plus">+</span></div><figcaption class="member-tag">Della — KOL Specialist</figcaption></figure><figure class="member" tabindex="0" aria-label="Gita — Admin Sosmed"><div class="member-photo"><span class="member-initial" style="background:#efe8d8">G</span><span class="member-plus">+</span></div><figcaption class="member-tag">Gita — Admin Sosmed</figcaption></figure><figure class="member" tabindex="0" aria-label="Cynthia — Socmed Specialist & Content Creator"><div class="member-photo"><span class="member-initial" style="background:#f6b43c">C</span><span class="member-plus">+</span></div><figcaption class="member-tag">Cynthia — Socmed Specialist & Content Creator</figcaption></figure></div>
 </div></section>
 <section class="band band-paper" style="border-top:1px solid var(--nk-line)"><div class="wrap">
 <p class="eyebrow">Clients</p>
@@ -77,7 +77,7 @@ document.querySelectorAll('.acc-btn').forEach(function(b){b.addEventListener('cl
   if(!was){item.classList.add('open');item.querySelector('.acc-toggle').textContent='\u2212';}
 });});
 </script>
-</body></html><script>
+<script>
 (function(){
   if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
   function split(el){
@@ -91,7 +91,7 @@ document.querySelectorAll('.acc-btn').forEach(function(b){b.addEventListener('cl
             if (/^\s+$/.test(part)){ frag.appendChild(document.createTextNode(' ')); return; }
             var w = document.createElement('span'); w.className = 'rw';
             var i = document.createElement('span'); i.className = 'rwi'; i.textContent = part;
-            i.style.transitionDelay = (idx++ * 45) + 'ms';
+            i.style.transitionDelay = (idx++ * 55) + 'ms';
             w.appendChild(i); frag.appendChild(w);
           });
           node.replaceChild(frag, n);
@@ -100,11 +100,11 @@ document.querySelectorAll('.acc-btn').forEach(function(b){b.addEventListener('cl
     }
     walk(el);
   }
-  var els = document.querySelectorAll('h1.display, h2.h1, h2.h2, h3.stack-title');
+  var els = document.querySelectorAll('h1, h2.h1, h2.h2, h3.stack-title, .display-xl');
   els.forEach(split);
   var io = new IntersectionObserver(function(es){
     es.forEach(function(e){ if (e.isIntersecting){ e.target.classList.add('revealed'); io.unobserve(e.target); } });
-  }, {threshold: 0.25});
-  els.forEach(function(el){ io.observe(el); });
+  }, {threshold: 0.15});
+  setTimeout(function(){ els.forEach(function(el){ io.observe(el); }); }, 180);
 })();
-</script>
+</script></body></html>
