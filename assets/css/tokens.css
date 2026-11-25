@@ -1,0 +1,89 @@
+/* ============================================================
+   NEURA KREATIF — Design Tokens
+   Source of truth: Figma "NEURA WEBSITE" (file 2M5Bq9xZDaT4NMcap0ygC2)
+   Extracted 2026-11-25 from the live design. Do not invent new
+   values — extend this file instead.
+   ============================================================ */
+
+:root {
+  /* — Color: core — */
+  --nk-ink: #1b1916;          /* primary text, borders, black button */
+  --nk-ink-soft: #2b2823;     /* card surface (Selected Work cards) */
+  --nk-ink-pressed: #22211f;  /* black button pressed state */
+  --nk-body: #514b41;         /* secondary / body text on cream */
+  --nk-taupe: #817461;        /* card border on dark, muted details */
+
+  /* — Color: surfaces — */
+  --nk-cream: #f9f6ee;        /* page / nav background */
+  --nk-cream-2: #faf6ed;      /* light text on dark, alt surface */
+  --nk-paper: #fffdf7;        /* lightest surface (logo strip) */
+  --nk-beige: #efe8d8;        /* About section background */
+  --nk-sand: #e0c391;         /* category labels on dark cards */
+  --nk-line: #d9d0be;         /* hairlines on cream */
+
+  /* — Color: brand accents — */
+  --nk-yellow: #f6b43c;       /* PRIMARY — nav CTA, highlights */
+  --nk-yellow-bright: #ffca08;/* CTA band background (Let's talk) */
+  --nk-yellow-pressed: #f9c870;/* primary button pressed state */
+  --nk-yellow-soft: #ffe09a;  /* Telin card / soft fills */
+  --nk-lilac: #d6bde5;        /* secondary accent — work cards, doodles */
+
+  /* — Typography — */
+  --nk-font-display: "Archivo", "Arial Black", sans-serif; /* Black 900 headlines */
+  --nk-font-sans: "Geist", "Inter", Arial, sans-serif;     /* UI, body, buttons */
+  /* Labels use Geist too (v1.1, owner decision 2026-11-25) — no mono/serif label font. */
+
+  /* Type scale (size / line-height / tracking) — from Figma */
+  --nk-display-xl: 100px;  /* Let's talk. — lh 92, ls -5.4px */
+  --nk-display-l: 78px;    /* Hero — lh 80 */
+  --nk-h1: 72px;           /* Section title on light — lh 78, ls -3.89px */
+  --nk-h1-dark: 64px;      /* Section title on black — lh 77 */
+  --nk-h2: 60px;           /* About headline — lh 64.68 */
+  --nk-h3: 34px;           /* Service accordion title, Geist Bold — lh 44, ls -1.87px */
+  --nk-card-title: 23.76px;/* Work card title, Geist Bold — lh 31, ls -0.83px */
+  --nk-body-l: 20px;       /* Hero sub / lead — lh 29 */
+  --nk-body: 16px;         /* Default body — lh ~25.5 */
+  --nk-ui: 14px;           /* Nav links & buttons, Geist Bold — lh 18.4 */
+  --nk-label: 12px;        /* Eyebrow/label, Geist Bold, uppercase, ls 1.8px, lh 16px */
+  --nk-label-ls: 1.8px;
+  --nk-micro-ls: 1px;      /* Card category, Geist Bold 10px uppercase */
+  --nk-micro: 10px;        /* Card category, uppercase, ls 0.5px */
+
+  /* — Shape — */
+  --nk-radius-pill: 68px;   /* all buttons */
+  --nk-radius-card: 15px;   /* work cards (top corners on media) */
+  --nk-radius-chip: 100px;  /* email pill */
+
+  /* — Borders & shadow (signature hard offset) — */
+  --nk-border: 1px solid var(--nk-ink);
+  --nk-border-dark-card: 1px solid var(--nk-taupe);
+  --nk-shadow-press: 1px 3px 0 0 #000; /* button hover + pressed, NO blur */
+
+  /* — Layout — */
+  --nk-container: 1280px;
+  --nk-page-pad: 80px;      /* desktop side padding (72–80 in Figma) */
+  --nk-nav-pad: 44px;
+  --nk-section-pad: 96px;   /* proposed rhythm for the revamp */
+
+  /* — Motion (proposed, keep subtle) — */
+  --nk-ease: cubic-bezier(.22,1,.36,1);
+  --nk-dur: 220ms;
+}
+
+/* — Label utilities (v1.1) — */
+.nk-eyebrow {
+  font-family: var(--nk-font-sans);
+  font-weight: 700;
+  font-size: var(--nk-label);   /* 12px */
+  line-height: 16px;
+  letter-spacing: var(--nk-label-ls); /* 1.8px */
+  text-transform: uppercase;
+}
+.nk-micro-label {
+  font-family: var(--nk-font-sans);
+  font-weight: 700;
+  font-size: var(--nk-micro);   /* 10px */
+  line-height: 14px;
+  letter-spacing: var(--nk-micro-ls); /* 1px */
+  text-transform: uppercase;
+}

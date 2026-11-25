@@ -1,0 +1,10 @@
+/* Geist — self-hosted (owner-supplied, SIL Open Font License, see ../fonts/OFL.txt)
+   Variable font: one file covers weights 100–900. */
+@font-face {
+  font-family: "Geist";
+  src: url("../fonts/GeistVariable.woff2") format("woff2"),
+       url("../fonts/GeistVariable.ttf") format("truetype");
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
