@@ -61,7 +61,7 @@ section.band{padding:var(--nk-section-pad) 0}
 .logo-strip{background:var(--nk-paper);border-top:1px solid var(--nk-line);border-bottom:1px solid var(--nk-line);padding:18px 0;overflow:hidden}
 .logo-strip .label{font-weight:700;font-size:13px;line-height:1.45;flex:none}
 .marquee{display:flex;gap:56px;align-items:center;width:max-content;animation:scrollx 36s linear infinite}
-.marquee img{height:42px;width:auto;object-fit:contain;filter:grayscale(1);opacity:.85}
+.marquee img{height:42px;width:auto;object-fit:contain}
 .marquee .brand-name{font-weight:700;font-size:18px;letter-spacing:.02em;white-space:nowrap;opacity:.75}
 @keyframes scrollx{to{transform:translateX(-50%)}}
 .logo-strip .row{display:flex;gap:48px;align-items:center}
@@ -128,7 +128,7 @@ section.band{padding:var(--nk-section-pad) 0}
 @media(max-width:900px){.client-wall{grid-template-columns:repeat(3,1fr)}}
 @media(max-width:560px){.client-wall{grid-template-columns:repeat(2,1fr)}}
 .client-wall .cell{background:var(--nk-paper);min-height:96px;display:flex;align-items:center;justify-content:center;padding:16px;font-weight:700;font-size:17px;text-align:center}
-.client-wall .cell img{height:42px;width:auto;object-fit:contain;filter:grayscale(1)}
+.client-wall .cell img{height:42px;width:auto;object-fit:contain}
 
 /* — Case pages — */
 .case-meta{display:flex;gap:12px;flex-wrap:wrap;margin-top:24px}
