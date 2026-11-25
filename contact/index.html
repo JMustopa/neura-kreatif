@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact — Start a Project — Neura Kreatif</title>
+<meta name="description" content="Start a project with Neura Kreatif: admin@neurakreatif.com — Social & Digital Activation, 360° Marketing, Creative & Production.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@700;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/css/fonts.css">
+<link rel="stylesheet" href="../assets/css/tokens.css">
+<link rel="stylesheet" href="../assets/css/styles.css">
+</head>
+<body><div id="top"></div><header class="site-nav"><div class="bar">
+<a class="logo" href="../index.html"><img src="../assets/img/logo-mark.png" alt="Neura Kreatif logo"><span class="word">NEURA<br>KREATIF</span></a>
+<nav class="nav-links" id="navLinks">
+<a href="../work/index.html">Work</a>
+<a href="../services/index.html">Services</a>
+<a href="../about/index.html">About</a>
+<a href="../contact/index.html" aria-current="page">Contact</a>
+</nav>
+<span style="display:flex;gap:10px;align-items:center">
+<a class="btn cta" href="../contact/index.html">Start a project <svg class="arr" viewBox="0 0 10 10" fill="none" aria-hidden="true"><path d="M9 9V1H1M9 1L1 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+<button class="nav-toggle" onclick="document.getElementById('navLinks').classList.toggle('open')">Menu</button>
+</span>
+</div></header>
+<section class="band band-yellow" style="padding-top:72px"><div class="wrap">
+<p class="eyebrow">Contact</p>
+<h1 class="display-xl" style="margin-top:14px">Let&rsquo;s talk<br>&amp; discuss.</h1>
+<p style="margin-top:22px;max-width:440px">Start a project, ask a question, or just share the truth about your brand. We reply from the inbox below.</p>
+<a class="email-pill" href="mailto:admin@neurakreatif.com" style="margin-top:28px">admin@neurakreatif.com <svg class="arr" viewBox="0 0 10 10" fill="none" aria-hidden="true"><path d="M9 9V1H1M9 1L1 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+</div></section>
+<section class="band"><div class="wrap"><div class="split">
+<div><h2 class="h1">Start a<br>project.</h2>
+<p class="body-txt" style="margin-top:20px">Fill this in and it lands straight in our inbox as an email, pre-written. Prefer email directly? admin@neurakreatif.com works too.</p>
+<div class="process" style="grid-template-columns:1fr;margin-top:36px">
+<div class="step"><div class="no">NEXT 01</div><h3>We reply</h3><p>We read every brief ourselves and come back with first thoughts.</p></div>
+<div class="step"><div class="no">NEXT 02</div><h3>Insight call</h3><p>A short call to find the human truth behind the brief.</p></div>
+<div class="step"><div class="no">NEXT 03</div><h3>Proposal</h3><p>Strategy, creative direction, timeline and numbers — in one deck.</p></div>
+</div></div>
+<form id="briefForm">
+<div class="form-grid">
+<div class="field"><label for="f-name">Your name</label><input id="f-name" required autocomplete="name"></div>
+<div class="field"><label for="f-brand">Brand / company</label><input id="f-brand" required></div>
+<div class="field full"><label for="f-email">Email</label><input id="f-email" type="email" required autocomplete="email"></div>
+<div class="field full"><label>What do you need?</label><div class="chips">
+<label><input type="checkbox" name="need" value="Social & Digital Activation">Social &amp; Digital Activation</label>
+<label><input type="checkbox" name="need" value="360° Marketing">360&deg; Marketing</label>
+<label><input type="checkbox" name="need" value="Creative & Production">Creative &amp; Production</label>
+<label><input type="checkbox" name="need" value="Event">Event</label>
+<label><input type="checkbox" name="need" value="Other">Other</label>
+</div></div>
+<div class="field full"><label for="f-budget">Budget range</label><select id="f-budget"><option value="">Select a range</option><option>Under IDR 50M</option><option>IDR 50–150M</option><option>IDR 150–500M</option><option>Above IDR 500M</option><option>Not sure yet</option></select></div>
+<div class="field full"><label for="f-msg">Tell us about the project</label><textarea id="f-msg" rows="5"></textarea></div>
+</div>
+<button class="btn dark" type="submit" style="margin-top:26px">Send brief <svg class="arr" viewBox="0 0 10 10" fill="none" aria-hidden="true"><path d="M9 9V1H1M9 1L1 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+<p class="micro" style="margin-top:14px;color:var(--nk-body)">Opens your email app, addressed to admin@neurakreatif.com</p>
+</form>
+</div></div></section>
+<script>
+document.getElementById('briefForm').addEventListener('submit',function(e){e.preventDefault();
+var needs=[];document.querySelectorAll('input[name="need"]:checked').forEach(function(x){needs.push(x.value)});
+var body='Name: '+document.getElementById('f-name').value+'%0D%0ABrand: '+document.getElementById('f-brand').value+'%0D%0AEmail: '+document.getElementById('f-email').value+'%0D%0ANeed: '+(needs.join(', ')||'-')+'%0D%0ABudget: '+(document.getElementById('f-budget').value||'-')+'%0D%0A%0D%0A'+encodeURIComponent(document.getElementById('f-msg').value);
+window.location.href='mailto:admin@neurakreatif.com?subject='+encodeURIComponent('New project brief — '+document.getElementById('f-brand').value)+'&body='+body;
+});
+</script><section class="band band-yellow"><div class="wrap"><div class="cta-inner">
+<div><div class="display-xl">Let&rsquo;s talk.</div>
+<p style="margin-top:18px;max-width:420px">Tell us the truth about your brand. We&rsquo;ll make it move.</p>
+<a class="email-pill" href="mailto:admin@neurakreatif.com" style="margin-top:26px">admin@neurakreatif.com <svg class="arr" viewBox="0 0 10 10" fill="none" aria-hidden="true"><path d="M9 9V1H1M9 1L1 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a></div>
+<div><img src="../assets/img/doodle-contact.svg" alt="Neura doodle illustration — envelope, chat bubble and sparkles, connected" style="width:100%;height:auto"></div></div></div></section><footer class="site-footer"><div class="bar">
+<span><strong>Neura Kreatif</strong> &copy; 2026</span>
+<nav class="footer-links">
+<a href="../work/index.html">Work</a><a href="../services/index.html">Services</a><a href="../about/index.html">About</a><a href="../contact/index.html">Contact</a>
+<a href="mailto:admin@neurakreatif.com">admin@neurakreatif.com</a><a href="https://www.neurakreatif.com">www.neurakreatif.com</a>
+</nav>
+<a class="textlink" href="#top">Back to top &uarr;</a>
+</div></footer>
+<script>
+document.querySelectorAll('.acc-btn').forEach(function(b){b.addEventListener('click',function(){
+  var item=b.parentElement, was=item.classList.contains('open');
+  item.parentElement.querySelectorAll('.acc-item').forEach(function(i){i.classList.remove('open');i.querySelector('.acc-toggle').textContent='+';});
+  if(!was){item.classList.add('open');item.querySelector('.acc-toggle').textContent='\u2212';}
+});});
+</script>
+</body></html><script>
+(function(){
+  if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+  function split(el){
+    var idx = 0;
+    function walk(node){
+      Array.prototype.slice.call(node.childNodes).forEach(function(n){
+        if (n.nodeType === 3){
+          var frag = document.createDocumentFragment();
+          n.textContent.split(/(\s+)/).forEach(function(part){
+            if (!part) return;
+            if (/^\s+$/.test(part)){ frag.appendChild(document.createTextNode(' ')); return; }
+            var w = document.createElement('span'); w.className = 'rw';
+            var i = document.createElement('span'); i.className = 'rwi'; i.textContent = part;
+            i.style.transitionDelay = (idx++ * 45) + 'ms';
+            w.appendChild(i); frag.appendChild(w);
+          });
+          node.replaceChild(frag, n);
+        } else if (n.nodeType === 1 && n.tagName !== 'BR'){ walk(n); }
+      });
+    }
+    walk(el);
+  }
+  var els = document.querySelectorAll('h1.display, h2.h1, h2.h2, h3.stack-title');
+  els.forEach(split);
+  var io = new IntersectionObserver(function(es){
+    es.forEach(function(e){ if (e.isIntersecting){ e.target.classList.add('revealed'); io.unobserve(e.target); } });
+  }, {threshold: 0.25});
+  els.forEach(function(el){ io.observe(el); });
+})();
+</script>
