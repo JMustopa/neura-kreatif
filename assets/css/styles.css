@@ -265,3 +265,14 @@ table.data tr.total td{font-weight:700;background:var(--nk-cream)}
 .hero .lead{animation:nkFadeUp 1s ease 1.15s both}
 .hero .btn{animation:nkFadeUp 1s ease 1.35s both}
 @media (prefers-reduced-motion: reduce){.hero .lead,.hero .btn{animation:none}}
+
+/* — v15: accessibility + motion preferences — */
+:focus-visible{outline:3px solid var(--nk-ink);outline-offset:3px;border-radius:6px}
+.logo-strip:hover .marquee{animation-play-state:paused}
+@media (prefers-reduced-motion: reduce){.marquee{animation:none}}
+@media(max-width:900px){
+  .btn{min-height:44px}
+  .nav-toggle{min-height:44px}
+  a.textlink{min-height:44px;display:inline-flex;align-items:center}
+  .footer-links a{min-height:44px;display:inline-flex;align-items:center}
+}

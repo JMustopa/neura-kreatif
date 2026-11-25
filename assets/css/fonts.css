@@ -8,3 +8,19 @@
   font-style: normal;
   font-display: swap;
 }
+
+/* Archivo — self-hosted (SIL Open Font License), weights 700 + 900 for headlines */
+@font-face {
+  font-family: "Archivo";
+  src: url("../fonts/archivo-700.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Archivo";
+  src: url("../fonts/archivo-900.woff2") format("woff2");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
