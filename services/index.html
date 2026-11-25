@@ -12,9 +12,9 @@
 <meta property="og:image" content="https://jmustopa.github.io/neura-kreatif/assets/img/share.jpg">
 <meta name="twitter:card" content="summary_large_image">
 
-<link rel="stylesheet" href="../assets/css/fonts.css?v=15">
+<link rel="stylesheet" href="../assets/css/fonts.css?v=16">
 <link rel="stylesheet" href="../assets/css/tokens.css">
-<link rel="stylesheet" href="../assets/css/styles.css?v=15">
+<link rel="stylesheet" href="../assets/css/styles.css?v=16">
 </head>
 <body><div id="top"></div><header class="site-nav"><div class="bar">
 <a class="logo" href="../index.html"><img src="../assets/img/logo-mark.png" alt="Neura Kreatif logo"><span class="word">NEURA<br>KREATIF</span></a>
@@ -72,7 +72,7 @@
 <div><div class="display-xl">Let&rsquo;s talk.</div>
 <p style="margin-top:18px;max-width:420px">Tell us the truth about your brand. We&rsquo;ll make it move.</p>
 <a class="email-pill" href="mailto:admin@neurakreatif.com" style="margin-top:26px">admin@neurakreatif.com <svg class="arr" viewBox="0 0 10 10" fill="none" aria-hidden="true"><path d="M9 9V1H1M9 1L1 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a></div>
-<div><img loading="lazy" src="../assets/img/doodle-contact.svg" alt="Neura doodle illustration — envelope, chat bubble and sparkles, connected" style="width:100%;height:auto"></div></div></div></section><footer class="site-footer"><div class="bar">
+<div><img class="cta-art" loading="lazy" src="../assets/img/doodle-contact.svg" alt="Neura doodle illustration — envelope, chat bubble and sparkles, connected" style="width:100%;height:auto"></div></div></div></section><footer class="site-footer"><div class="bar">
 <span><strong>Neura Kreatif</strong> &copy; 2026</span>
 <nav class="footer-links">
 <a href="../work/index.html">Work</a><a href="../services/index.html">Services</a><a href="../about/index.html">About</a><a href="../contact/index.html">Contact</a>
@@ -117,4 +117,23 @@ document.querySelectorAll('.acc-btn').forEach(function(b){b.addEventListener('cl
   }, {threshold: 0.15});
   setTimeout(function(){ els.forEach(function(el){ io.observe(el); }); }, 180);
 })();
+</script><script src="../assets/js/anime.umd.min.js"></script>
+<script>
+try {
+  if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches && window.anime) {
+    var heroImg = document.querySelector('.hero-art img');
+    var ctaImg = document.querySelector('.cta-art');
+    var sparks = document.querySelectorAll('.hero-spark');
+    if (heroImg) {
+      anime.animate('.hero-art', { opacity: [0, 1], translateY: [16, 0], duration: 900, ease: 'outCubic' });
+      anime.animate(heroImg, { translateY: -7, rotate: 0.7, duration: 3400, ease: 'inOutSine', alternate: true, loop: true });
+    }
+    if (sparks.length) {
+      anime.animate('.hero-spark', { scale: [1, 1.3], rotate: [0, 25], duration: 2600, ease: 'inOutSine', alternate: true, loop: true, delay: anime.stagger(420) });
+    }
+    if (ctaImg) {
+      anime.animate(ctaImg, { translateY: -6, rotate: -1, duration: 3000, ease: 'inOutSine', alternate: true, loop: true });
+    }
+  }
+} catch (e) {}
 </script></body></html>
