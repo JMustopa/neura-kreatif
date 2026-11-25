@@ -76,7 +76,7 @@ document.querySelectorAll('.acc-btn').forEach(function(b){b.addEventListener('cl
   if(!was){item.classList.add('open');item.querySelector('.acc-toggle').textContent='\u2212';}
 });});
 </script>
-</body></html><script>
+<script>
 (function(){
   if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
   function split(el){
@@ -90,7 +90,7 @@ document.querySelectorAll('.acc-btn').forEach(function(b){b.addEventListener('cl
             if (/^\s+$/.test(part)){ frag.appendChild(document.createTextNode(' ')); return; }
             var w = document.createElement('span'); w.className = 'rw';
             var i = document.createElement('span'); i.className = 'rwi'; i.textContent = part;
-            i.style.transitionDelay = (idx++ * 45) + 'ms';
+            i.style.transitionDelay = (idx++ * 55) + 'ms';
             w.appendChild(i); frag.appendChild(w);
           });
           node.replaceChild(frag, n);
@@ -99,11 +99,11 @@ document.querySelectorAll('.acc-btn').forEach(function(b){b.addEventListener('cl
     }
     walk(el);
   }
-  var els = document.querySelectorAll('h1.display, h2.h1, h2.h2, h3.stack-title');
+  var els = document.querySelectorAll('h1, h2.h1, h2.h2, h3.stack-title, .display-xl');
   els.forEach(split);
   var io = new IntersectionObserver(function(es){
     es.forEach(function(e){ if (e.isIntersecting){ e.target.classList.add('revealed'); io.unobserve(e.target); } });
-  }, {threshold: 0.25});
-  els.forEach(function(el){ io.observe(el); });
+  }, {threshold: 0.15});
+  setTimeout(function(){ els.forEach(function(el){ io.observe(el); }); }, 180);
 })();
-</script>
+</script></body></html>
