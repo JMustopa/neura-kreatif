@@ -450,5 +450,5 @@ body{overflow-x:clip}
 .hww-card img{-webkit-user-drag:none}
 
 /* — v29: eyebrow optical alignment — label ink sits flush with the headline ink below it (font side-bearings made labels look indented) — */
-.eyebrow{margin-left:-4px}
-#about-neura .eyebrow{margin-left:-6px}
+.eyebrow{margin-left:0}
+#about-neura .eyebrow{margin-left:4px}
