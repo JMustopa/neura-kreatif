@@ -371,3 +371,18 @@ table.data tr.total td{font-weight:700;background:var(--nk-cream)}
 /* — v21: Services hero lead — wide, two lines on desktop, proportional to the display headline — */
 .svc-lead{max-width:980px}
 @media(max-width:900px){.svc-lead{max-width:640px}}
+
+/* — v23: orphan control — pretty wrapping for prose, balanced headings — */
+p,.body-txt,.lead,.cap,.stack-desc,.svc-desc,.t-quote,.mani-def,.mani-note,.scap,.wc-desc,.svc-row-head .body-txt{text-wrap:pretty}
+h2,h3,.display-xl{text-wrap:balance}
+/* — v23: case Results — retainer stat icons + partnership panel (separates the two stat groups) — */
+.stat-ico{width:42px;height:42px;border:1px solid var(--nk-sand);border-radius:50%;display:flex;align-items:center;justify-content:center;margin-bottom:16px}
+.stat-ico svg{width:21px;height:21px;display:block}
+.partner-panel{background:var(--nk-paper);color:var(--nk-ink);border-radius:18px;padding:30px 32px 8px;margin-top:46px}
+.partner-panel .stats{border-top:none;border-bottom:none;margin-top:4px;padding:18px 0 26px}
+.partner-panel .stat .num{color:var(--nk-ink)}
+.partner-panel .stat .cap{color:var(--nk-body)}
+@media(max-width:640px){.partner-panel{padding:24px 20px 4px}}
+/* — v23: Next case — rounded frame on all case pages — */
+.next-frame{border:1px solid var(--nk-ink);border-radius:24px;background:var(--nk-paper);padding:42px 46px;display:flex;justify-content:space-between;align-items:center;gap:24px;flex-wrap:wrap;box-shadow:5px 7px 0 var(--nk-ink)}
+@media(max-width:640px){.next-frame{padding:28px 24px}}
