@@ -367,3 +367,7 @@ table.data tr.total td{font-weight:700;background:var(--nk-cream)}
 @media(max-width:900px){.svc-row{grid-template-columns:1fr;gap:24px;padding:36px 0}}
 @media(max-width:560px){.svc-list-rows{grid-template-columns:1fr}}
 /* — v20: manifesto panel changes on click/focus only (hover is preview highlight only) — */
+
+/* — v21: Services hero lead — wide, two lines on desktop, proportional to the display headline — */
+.svc-lead{max-width:980px}
+@media(max-width:900px){.svc-lead{max-width:640px}}
