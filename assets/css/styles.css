@@ -316,3 +316,37 @@ table.data tr.total td{font-weight:700;background:var(--nk-cream)}
 .stats.light .stat .num{color:var(--nk-ink)}
 .stats.light .stat .cap{color:var(--nk-body)}
 @media(max-width:820px){.stats{grid-template-columns:repeat(2,1fr);gap:26px}}
+
+/* — v19: About Neura — interactive manifesto (Paket Bold) — */
+.mani-grid{display:grid;grid-template-columns:1.12fr .88fr;gap:56px;align-items:start;margin-top:20px}
+@media(max-width:900px){.mani-grid{grid-template-columns:1fr;gap:30px}}
+.mword{font:inherit;color:inherit;background:transparent;border:none;cursor:pointer;padding:0 .07em;margin:0 -.07em;border-radius:10px;text-decoration:underline;text-decoration-thickness:.07em;text-underline-offset:.14em;text-decoration-color:rgba(27,25,22,.35);transition:background .25s ease,text-decoration-color .25s ease}
+.mword:hover{text-decoration-color:var(--nk-ink)}
+.mw-culture.mw-on,.mw-culture:hover{background:var(--nk-yellow)}
+.mw-truth.mw-on,.mw-truth:hover{background:var(--nk-lilac)}
+.mw-audience.mw-on,.mw-audience:hover{background:var(--nk-sand)}
+.mani-panel{background:var(--nk-paper);border:1px solid var(--nk-ink);border-radius:18px;padding:28px;box-shadow:5px 7px 0 var(--nk-ink);min-height:196px}
+.mani-kicker{color:var(--nk-taupe)}
+.mani-def{margin-top:14px;font-size:19px;line-height:1.55;color:var(--nk-ink)}
+.mani-note{margin-top:14px;font-size:14px;line-height:1.55;color:var(--nk-body)}
+@keyframes maniFade{from{opacity:.25;transform:translateY(6px)}to{opacity:1;transform:translateY(0)}}
+.mani-swap .mani-def,.mani-swap .mani-note,.mani-swap .mani-kicker{animation:maniFade .35s ease both}
+@media (prefers-reduced-motion: reduce){.mani-swap .mani-def,.mani-swap .mani-note,.mani-swap .mani-kicker{animation:none}.mword{transition:none}}
+.mani-people{display:flex;align-items:center;gap:20px;flex-wrap:wrap;margin-top:46px;padding-top:30px;border-top:1px solid var(--nk-line)}
+.mani-avatars{display:flex;text-decoration:none;flex:none}
+.mani-avatars span{width:44px;height:44px;border-radius:50%;border:1px solid var(--nk-ink);display:flex;align-items:center;justify-content:center;font-weight:700;font-size:16px;margin-left:-10px;transition:transform .25s ease}
+.mani-avatars span:first-child{margin-left:0}
+.mani-avatars:hover span{transform:translateY(-4px)}
+.mani-proof{display:flex;flex-direction:column;gap:2px;margin-right:auto;min-width:220px}
+.mani-proof strong{font-size:15px}
+.mani-proof span{font-size:14px;color:var(--nk-body)}
+.mani-teasers{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:34px}
+@media(max-width:900px){.mani-teasers{grid-template-columns:1fr;gap:6px}}
+.mani-teaser{display:flex;gap:16px;align-items:flex-start;padding:18px 2px 6px;border-top:2px solid var(--nk-ink);text-decoration:none}
+.mani-teaser .mt-no{font-weight:700;font-size:12px;letter-spacing:1.8px;color:var(--nk-taupe);padding-top:4px}
+.mani-teaser .mt-txt{display:flex;flex-direction:column;gap:2px;margin-right:auto}
+.mani-teaser strong{font-size:17px}
+.mani-teaser small{font-size:14px;color:var(--nk-body)}
+.mani-teaser .arr{margin-top:7px;transition:transform .25s ease}
+.mani-teaser:hover strong{text-decoration:underline;text-underline-offset:5px;text-decoration-thickness:2px}
+.mani-teaser:hover .arr{transform:translate(2px,-2px)}
