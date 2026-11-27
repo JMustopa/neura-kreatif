@@ -258,9 +258,10 @@ table.data tr.total td{font-weight:700;background:var(--nk-cream)}
 .member-photo img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .5s cubic-bezier(.16,.6,.24,1)}
 .member-initial{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;font-family:var(--nk-font-display);font-size:84px;color:var(--nk-ink);transition:transform .5s cubic-bezier(.16,.6,.24,1)}
 .member-plus{position:absolute;top:10px;right:14px;font-size:20px;font-weight:700;color:var(--nk-ink);opacity:.45}
-.member-tag{margin-top:14px;display:flex;flex-direction:column;align-items:center;gap:2px;text-align:center;line-height:1.35}
-.member-tag strong{font-size:16px;font-weight:700;color:var(--nk-ink)}
-.member-tag span{font-size:11.5px;font-weight:700;letter-spacing:.8px;text-transform:uppercase;color:var(--nk-taupe)}
+.member-tag{position:absolute;left:50%;bottom:14px;transform:translate(-50%,10px);opacity:0;transition:all .35s cubic-bezier(.16,.6,.24,1);background:var(--nk-ink);border-radius:16px;padding:10px 18px;max-width:92%;z-index:2;pointer-events:none;display:flex;flex-direction:column;align-items:center;gap:1px;text-align:center;line-height:1.35}
+.member-tag strong{font-size:14px;font-weight:700;color:var(--nk-cream-2);white-space:nowrap}
+.member-tag span{font-size:10.5px;font-weight:700;letter-spacing:.8px;text-transform:uppercase;color:var(--nk-sand);text-align:center}
+.member:hover .member-tag,.member:focus .member-tag,.member:focus-within .member-tag{opacity:1;transform:translate(-50%,0)}
 .member:hover .member-photo img,.member:hover .member-initial{transform:scale(1.05)}
 
 /* Hero supporting elements fade in after the headline (slabpixel-style) */
