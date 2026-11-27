@@ -12,9 +12,9 @@
 <meta property="og:image" content="https://jmustopa.github.io/neura-kreatif/assets/img/share.jpg">
 <meta name="twitter:card" content="summary_large_image">
 
-<link rel="stylesheet" href="assets/css/fonts.css?v=18">
+<link rel="stylesheet" href="assets/css/fonts.css?v=19">
 <link rel="stylesheet" href="assets/css/tokens.css">
-<link rel="stylesheet" href="assets/css/styles.css?v=18">
+<link rel="stylesheet" href="assets/css/styles.css?v=19">
 </head>
 <body><div id="top"></div><header class="site-nav"><div class="bar">
 <a class="logo" href="index.html"><img src="assets/img/logo-mark.png" alt="Neura Kreatif logo"><span class="word">NEURA<br>KREATIF</span></a>
@@ -210,11 +210,64 @@
 </div>
 <p class="micro" style="text-align:center;margin-top:22px;color:var(--nk-taupe)">Placeholder copy — real client testimonials coming soon.</p>
 </div></section>
-<section class="band band-beige"><div class="wrap">
-<p class="eyebrow">About Neura</p>
-<div class="split" style="margin-top:18px"><h2 class="h2">Rooted in culture.<br>Driven by truth.</h2>
-<div><p class="body-txt">We&rsquo;re a youth-led creative agency. We listen for what audiences care about and turn those insights into strategy, creative work and activation.</p><a class="textlink" href="about/index.html" style="display:inline-block;margin-top:20px">More about us <svg class="arr" viewBox="0 0 10 10" fill="none" aria-hidden="true"><path d="M9 9V1H1M9 1L1 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a></div></div>
-</div></section><section class="band band-yellow"><div class="wrap"><div class="cta-inner">
+<section class="band band-beige" id="about-neura"><div class="wrap">
+<p class="eyebrow">About Neura &middot; Hover or tap the highlighted words</p>
+<div class="mani-grid">
+<h2 class="h2">Rooted in <button type="button" class="mword mw-culture" data-mkey="culture" aria-pressed="false">culture.</button><br>Driven by <button type="button" class="mword mw-truth" data-mkey="truth" aria-pressed="false">truth.</button><br>Built for <button type="button" class="mword mw-audience" data-mkey="audience" aria-pressed="false">audience.</button></h2>
+<div class="mani-panel" aria-live="polite">
+<p class="micro mani-kicker" id="maniKicker">Why it matters</p>
+<p class="mani-def" id="maniDef">We&rsquo;re a youth-led creative agency in Jakarta. We listen for what audiences feel &mdash; even what they don&rsquo;t say out loud &mdash; and turn it into strategy, creative work and activation.</p>
+<p class="mani-note" id="maniNote">Hover or tap the three highlighted words. That&rsquo;s our whole method, in three words.</p>
+</div>
+</div>
+<div class="mani-people">
+<a class="mani-avatars" href="about/index.html#team" aria-label="Meet the 9 people behind Neura"><span style="background:#f6b43c">P</span><span style="background:#d6bde5">J</span><span style="background:#ffe09a">A</span><span style="background:#efe8d8">K</span><span style="background:#f6b43c">B</span><span style="background:#d6bde5">J</span><span style="background:#ffe09a">D</span><span style="background:#efe8d8">G</span><span style="background:#f6b43c">C</span></a>
+<div class="mani-proof"><strong>9 people. One youth-led team in Jakarta.</strong><span>Social &amp; Digital Activation &middot; 360&deg; Marketing &middot; Creative &amp; Production</span></div>
+<a class="btn" href="about/index.html#team">Meet the people behind Neura <svg class="arr" viewBox="0 0 10 10" fill="none" aria-hidden="true"><path d="M9 9V1H1M9 1L1 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+</div>
+<div class="mani-teasers">
+<a class="mani-teaser" href="about/index.html"><span class="mt-no">01</span><span class="mt-txt"><strong>How we think</strong><small>Finding the unspoken truth</small></span><svg class="arr arr-lg" viewBox="0 0 10 10" fill="none" aria-hidden="true"><path d="M9 9V1H1M9 1L1 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+<a class="mani-teaser" href="about/index.html#team"><span class="mt-no">02</span><span class="mt-txt"><strong>Who we are</strong><small>Meet the 9 people behind Neura</small></span><svg class="arr arr-lg" viewBox="0 0 10 10" fill="none" aria-hidden="true"><path d="M9 9V1H1M9 1L1 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+<a class="mani-teaser" href="services/index.html"><span class="mt-no">03</span><span class="mt-txt"><strong>How we work</strong><small>Three capabilities, one system</small></span><svg class="arr arr-lg" viewBox="0 0 10 10" fill="none" aria-hidden="true"><path d="M9 9V1H1M9 1L1 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+</div>
+</div></section>
+<script>
+(function(){
+  var MANI = {
+    culture: {kicker: 'Culture \u2014 what it means at Neura', def: 'The stuff people actually live in: timelines, group chats, communities and scenes. We don\u2019t watch culture from the outside \u2014 we live inside it.', note: 'Rooted in culture means the work starts where people already are.'},
+    truth: {kicker: 'Truth \u2014 what it means at Neura', def: 'What audiences feel but rarely say out loud. We dig for that unspoken truth first \u2014 then we build the strategy on top of it.', note: 'Driven by truth means no campaign starts with a guess.'},
+    audience: {kicker: 'Audience \u2014 what it means at Neura', def: 'Not a reach number. Real people who have to talk, share, show up and buy \u2014 everything we make is built for them.', note: 'Built for audience means the work has to move people, not just impressions.'}
+  };
+  var words = Array.prototype.slice.call(document.querySelectorAll('.mword'));
+  if (!words.length) return;
+  var kicker = document.getElementById('maniKicker'), def = document.getElementById('maniDef'), note = document.getElementById('maniNote'), panel = document.querySelector('.mani-panel');
+  var userTouched = false, timer = null, idx = -1, keys = ['culture','truth','audience'];
+  function setActive(key){
+    words.forEach(function(w){ var on = w.getAttribute('data-mkey') === key; w.classList.toggle('mw-on', on); w.setAttribute('aria-pressed', on ? 'true' : 'false'); });
+    var d = MANI[key]; if (!d) return;
+    kicker.textContent = d.kicker; def.textContent = d.def; note.textContent = d.note;
+    if (panel){ panel.classList.remove('mani-swap'); void panel.offsetWidth; panel.classList.add('mani-swap'); }
+  }
+  words.forEach(function(w){
+    var key = w.getAttribute('data-mkey');
+    function user(){ userTouched = true; if (timer){ clearInterval(timer); timer = null; } setActive(key); }
+    w.addEventListener('mouseenter', user);
+    w.addEventListener('focus', user);
+    w.addEventListener('click', user);
+  });
+  if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches){
+    var sec = document.getElementById('about-neura');
+    var io = new IntersectionObserver(function(es){
+      es.forEach(function(e){
+        if (e.isIntersecting && !timer && !userTouched){
+          timer = setInterval(function(){ if (userTouched || document.hidden) return; idx = (idx + 1) % keys.length; setActive(keys[idx]); }, 3400);
+        } else if (!e.isIntersecting && timer){ clearInterval(timer); timer = null; }
+      });
+    }, {threshold: 0.35});
+    if (sec) io.observe(sec);
+  }
+})();
+</script><section class="band band-yellow"><div class="wrap"><div class="cta-inner">
 <div><div class="display-xl">Let&rsquo;s talk.</div>
 <p style="margin-top:18px;max-width:420px">Tell us the truth about your brand. We&rsquo;ll make it move.</p>
 <a class="email-pill" href="mailto:admin@neurakreatif.com" style="margin-top:26px">admin@neurakreatif.com <svg class="arr" viewBox="0 0 10 10" fill="none" aria-hidden="true"><path d="M9 9V1H1M9 1L1 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a></div>
