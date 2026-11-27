@@ -12,9 +12,9 @@
 <meta property="og:image" content="https://jmustopa.github.io/neura-kreatif/assets/img/share.jpg">
 <meta name="twitter:card" content="summary_large_image">
 
-<link rel="stylesheet" href="assets/css/fonts.css?v=19">
+<link rel="stylesheet" href="assets/css/fonts.css?v=20">
 <link rel="stylesheet" href="assets/css/tokens.css">
-<link rel="stylesheet" href="assets/css/styles.css?v=19">
+<link rel="stylesheet" href="assets/css/styles.css?v=20">
 </head>
 <body><div id="top"></div><header class="site-nav"><div class="bar">
 <a class="logo" href="index.html"><img src="assets/img/logo-mark.png" alt="Neura Kreatif logo"><span class="word">NEURA<br>KREATIF</span></a>
@@ -211,23 +211,23 @@
 <p class="micro" style="text-align:center;margin-top:22px;color:var(--nk-taupe)">Placeholder copy — real client testimonials coming soon.</p>
 </div></section>
 <section class="band band-beige" id="about-neura"><div class="wrap">
-<p class="eyebrow">About Neura &middot; Hover or tap the highlighted words</p>
+<p class="eyebrow">About Neura &middot; Click the highlighted words</p>
 <div class="mani-grid">
 <h2 class="h2">Rooted in <button type="button" class="mword mw-culture" data-mkey="culture" aria-pressed="false">culture.</button><br>Driven by <button type="button" class="mword mw-truth" data-mkey="truth" aria-pressed="false">truth.</button><br>Built for <button type="button" class="mword mw-audience" data-mkey="audience" aria-pressed="false">audience.</button></h2>
 <div class="mani-panel" aria-live="polite">
 <p class="micro mani-kicker" id="maniKicker">Why it matters</p>
 <p class="mani-def" id="maniDef">We&rsquo;re a youth-led creative agency in Jakarta. We listen for what audiences feel &mdash; even what they don&rsquo;t say out loud &mdash; and turn it into strategy, creative work and activation.</p>
-<p class="mani-note" id="maniNote">Hover or tap the three highlighted words. That&rsquo;s our whole method, in three words.</p>
+<p class="mani-note" id="maniNote">Click or tap the three highlighted words. That&rsquo;s our whole method, in three words.</p>
 </div>
 </div>
 <div class="mani-people">
-<a class="mani-avatars" href="about/index.html#team" aria-label="Meet the 9 people behind Neura"><span style="background:#f6b43c">P</span><span style="background:#d6bde5">J</span><span style="background:#ffe09a">A</span><span style="background:#efe8d8">K</span><span style="background:#f6b43c">B</span><span style="background:#d6bde5">J</span><span style="background:#ffe09a">D</span><span style="background:#efe8d8">G</span><span style="background:#f6b43c">C</span></a>
-<div class="mani-proof"><strong>9 people. One youth-led team in Jakarta.</strong><span>Social &amp; Digital Activation &middot; 360&deg; Marketing &middot; Creative &amp; Production</span></div>
+<a class="mani-avatars" href="about/index.html#team" aria-label="Meet the 8 people behind Neura"><span style="background:#f6b43c">P</span><span style="background:#d6bde5">J</span><span style="background:#ffe09a">A</span><span style="background:#f6b43c">B</span><span style="background:#d6bde5">J</span><span style="background:#ffe09a">D</span><span style="background:#efe8d8">G</span><span style="background:#f6b43c">C</span></a>
+<div class="mani-proof"><strong>8 people. One youth-led team in Jakarta.</strong><span>Social &amp; Digital Activation &middot; 360&deg; Marketing &middot; Creative &amp; Production</span></div>
 <a class="btn" href="about/index.html#team">Meet the people behind Neura <svg class="arr" viewBox="0 0 10 10" fill="none" aria-hidden="true"><path d="M9 9V1H1M9 1L1 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
 </div>
 <div class="mani-teasers">
 <a class="mani-teaser" href="about/index.html"><span class="mt-no">01</span><span class="mt-txt"><strong>How we think</strong><small>Finding the unspoken truth</small></span><svg class="arr arr-lg" viewBox="0 0 10 10" fill="none" aria-hidden="true"><path d="M9 9V1H1M9 1L1 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
-<a class="mani-teaser" href="about/index.html#team"><span class="mt-no">02</span><span class="mt-txt"><strong>Who we are</strong><small>Meet the 9 people behind Neura</small></span><svg class="arr arr-lg" viewBox="0 0 10 10" fill="none" aria-hidden="true"><path d="M9 9V1H1M9 1L1 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+<a class="mani-teaser" href="about/index.html#team"><span class="mt-no">02</span><span class="mt-txt"><strong>Who we are</strong><small>Meet the 8 people behind Neura</small></span><svg class="arr arr-lg" viewBox="0 0 10 10" fill="none" aria-hidden="true"><path d="M9 9V1H1M9 1L1 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
 <a class="mani-teaser" href="services/index.html"><span class="mt-no">03</span><span class="mt-txt"><strong>How we work</strong><small>Three capabilities, one system</small></span><svg class="arr arr-lg" viewBox="0 0 10 10" fill="none" aria-hidden="true"><path d="M9 9V1H1M9 1L1 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
 </div>
 </div></section>
@@ -251,7 +251,6 @@
   words.forEach(function(w){
     var key = w.getAttribute('data-mkey');
     function user(){ userTouched = true; if (timer){ clearInterval(timer); timer = null; } setActive(key); }
-    w.addEventListener('mouseenter', user);
     w.addEventListener('focus', user);
     w.addEventListener('click', user);
   });
