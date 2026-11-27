@@ -386,3 +386,6 @@ h2,h3,.display-xl{text-wrap:balance}
 /* — v23: Next case — rounded frame on all case pages — */
 .next-frame{border:1px solid var(--nk-ink);border-radius:24px;background:var(--nk-paper);padding:42px 46px;display:flex;justify-content:space-between;align-items:center;gap:24px;flex-wrap:wrap;box-shadow:5px 7px 0 var(--nk-ink)}
 @media(max-width:640px){.next-frame{padding:28px 24px}}
+
+/* — v24: How We Work step cards on the black band — dark text on the paper cards (was inheriting white) — */
+.band-black .step{color:var(--nk-ink)}
