@@ -439,7 +439,6 @@ h2,h3,.display-xl{text-wrap:balance}
   .hww-art{height:140px}
 }
 
-
 /* — v28: How We Work rail — user-dragged (no autoplay), seamless wrap, bleeds to the right viewport edge, NO fade masks — */
 body{overflow-x:clip}
 .hww-rail{overflow-x:auto;overflow-y:hidden;-webkit-mask-image:none;mask-image:none;cursor:grab;scrollbar-width:none;-webkit-overflow-scrolling:touch;margin-right:calc(-1 * (max(0px,(100vw - (var(--nk-container) + 2 * var(--nk-page-pad))) / 2) + var(--nk-page-pad)))}
@@ -449,3 +448,7 @@ body{overflow-x:clip}
 .hww-art-loop svg{width:92px;height:92px;display:block}
 .hww-card{-webkit-user-select:none;user-select:none}
 .hww-card img{-webkit-user-drag:none}
+
+/* — v29: eyebrow optical alignment — label ink sits flush with the headline ink below it (font side-bearings made labels look indented) — */
+.eyebrow{margin-left:-4px}
+#about-neura .eyebrow{margin-left:-6px}
